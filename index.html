@@ -31,6 +31,10 @@
 		  var currentdata = data[i];
 		  var age = currentdata["Age "];
 		  var screenshots = currentdata["Base and profile screenshot"];
+		  if (screenshots.length > 12) {
+			screenshots = "<a href='" + screenshots+ "'>"+ screenshots + "</a>"
+		  }
+		  
 		  var groupmebool = currentdata["Do you have GroupMe and/or Skitch? "];
 		  var gender = currentdata["Gender "];
 		  var redditclan = currentdata["Have you been in a reddit clan before? If so why did you leave? "];
