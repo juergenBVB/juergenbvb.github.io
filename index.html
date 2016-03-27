@@ -32,7 +32,7 @@
 		  var age = currentdata["Age "];
 		  var screenshots = currentdata["Base and profile screenshot"];
 		  if (screenshots.length > 12) {
-			screenshots = "<a href='" + screenshots+ "'>"+ screenshots + "</a>"
+			screenshots = "<a href='" + screenshots+ "' target = '_blank'>"+ screenshots + "</a>"
 		  }
 		  
 		  var groupmebool = currentdata["Do you have GroupMe and/or Skitch? "];
@@ -46,6 +46,10 @@
 		  var groupmename = currentdata["What is you GroupMe username?"];
 		  var friendinneed = currentdata["What is your friend in need score?"];
 		  var redditname = currentdata["What is your reddit name?"];
+		  if (redditname.length > 3) {
+			redditname = "<a href='http://www.reddit.com/u/" + redditname + "' target = '_blank'>" + redditname + "</a>";
+		  }
+		  
 		  var timezone = currentdata["What is your time-zone?"];
 		  var archerlevel = currentdata["What level archers do you have?"];
 		  var herolevel = currentdata["What level are your heroes?"];
